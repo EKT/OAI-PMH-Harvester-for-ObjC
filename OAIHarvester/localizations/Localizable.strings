@@ -1,0 +1,21 @@
+/*********************************************************************************************
+ 
+ This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+ 
+ To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
+ 
+**********************************************************************************************/
+
+//OAI-PMH errors
+"harvester.oaipmh.error.badArgument" = "The request includes illegal arguments, is missing required arguments, includes a repeated argument, or values for arguments have an illegal syntax.";
+"harvester.oaipmh.error.badResumptionToken" = "The value of the resumptionToken argument is invalid or expired.";
+"harvester.oaipmh.error.badVerb" = "Value of the verb argument is not a legal OAI-PMH verb, the verb argument is missing, or the verb argument is repeated.";
+"harvester.oaipmh.error.cannotDisseminateFormat" = "The metadata format identified by the value given for the metadataPrefix argument is not supported by the item or by the repository.";
+"harvester.oaipmh.error.idDoesNotExist" = "The value of the identifier argument is unknown or illegal in this repository.";
+"harvester.oaipmh.error.noRecordsMatch" = "The combination of the values of the from, until, set and metadataPrefix arguments results in an empty list.";
+"harvester.oaipmh.error.noMetadataFormats" = "There are no metadata formats available for the specified item.";
+"harvester.oaipmh.error.noSetHierarchyt" = "The repository does not support sets.";
+
+//Client errors
+"harvester.client.error.nobaseurl" = "You have to specify the base URL of the OAI-PMH server.";
+"harvester.client.error.nometadataprefix" = "You have to specify the metadataPrefix argument for the request.";

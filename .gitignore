@@ -1,0 +1,5 @@
+# mac noise
+.DS_Store
+
+# xcode noise
+DerivedData
