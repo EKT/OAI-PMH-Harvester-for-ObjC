@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Kostas Stamatis" => "kstamatis@ekt.gr" }
 
-  s.source       = { :git => "https://github.com/EKT/OAI-PMH-Harvester-for-ObjC.git" }
+  s.source       = { :git => "https://github.com/EKT/OAI-PMH-Harvester-for-ObjC.git", :tag ==> "0.0.1" }
 
   s.source_files  = "OAIHarvester", "OAIHarvester/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
