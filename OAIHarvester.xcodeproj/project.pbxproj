@@ -7,284 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5225988A16454ADC007E6097 /* Identify.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225988916454ADC007E6097 /* Identify.m */; };
-		5225988E16454AEB007E6097 /* MetadataFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225988D16454AEB007E6097 /* MetadataFormat.m */; };
-		5225989116454B07007E6097 /* Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225989016454B07007E6097 /* Set.m */; };
-		5225989416454B1F007E6097 /* ResumptionToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225989316454B1F007E6097 /* ResumptionToken.m */; };
-		522599C716459AEA007E6097 /* Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 522599C616459AEA007E6097 /* Identifier.m */; };
-		5272911B1642D1760020F38D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5272911A1642D1760020F38D /* Foundation.framework */; };
-		527291201642D1760020F38D /* OAIHarvester.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5272911F1642D1760020F38D /* OAIHarvester.h */; };
-		527291221642D1760020F38D /* OAIHarvester.m in Sources */ = {isa = PBXBuildFile; fileRef = 527291211642D1760020F38D /* OAIHarvester.m */; };
-		5272912B1642D32A0020F38D /* RecordMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 5272912A1642D32A0020F38D /* RecordMetadata.m */; };
-		5272912E1642D4680020F38D /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 5272912D1642D4680020F38D /* Record.m */; };
-		5272915C1642D5C30020F38D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5272915B1642D5C30020F38D /* libxml2.dylib */; };
-		52729242164332D40020F38D /* HarvesterError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5272923F164332D40020F38D /* HarvesterError.m */; };
-		52729247164332F10020F38D /* MetadataElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 52729244164332F10020F38D /* MetadataElement.m */; };
-		52729248164332F10020F38D /* RecordHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52729246164332F10020F38D /* RecordHeader.m */; };
-		52732381165169780067DF4E /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320CA165169770067DF4E /* CXMLDocument_CreationExtensions.m */; };
-		52732382165169780067DF4E /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320CC165169770067DF4E /* CXMLNode_CreationExtensions.m */; };
-		52732383165169780067DF4E /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320CE165169770067DF4E /* CXHTMLDocument.m */; };
-		52732384165169780067DF4E /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320D0165169770067DF4E /* CXMLDocument.m */; };
-		52732385165169780067DF4E /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320D2165169770067DF4E /* CXMLDocument_PrivateExtensions.m */; };
-		52732386165169780067DF4E /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320D4165169770067DF4E /* CXMLElement.m */; };
-		52732387165169780067DF4E /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320D6165169770067DF4E /* CXMLElement_CreationExtensions.m */; };
-		52732388165169780067DF4E /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320D8165169770067DF4E /* CXMLElement_ElementTreeExtensions.m */; };
-		52732389165169780067DF4E /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320DA165169770067DF4E /* CXMLNamespaceNode.m */; };
-		5273238A165169780067DF4E /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320DC165169770067DF4E /* CXMLNode.m */; };
-		5273238B165169780067DF4E /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320DE165169770067DF4E /* CXMLNode_PrivateExtensions.m */; };
-		5273238C165169780067DF4E /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320E0165169770067DF4E /* CXMLNode_XPathExtensions.m */; };
-		5273238D165169780067DF4E /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 527320E3165169770067DF4E /* CTidy.m */; };
+		52FCF7D41BB524A100FF431E /* OAIHarvester.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52FCF7D31BB524A100FF431E /* OAIHarvester.h */; };
+		52FCF7D61BB524A100FF431E /* OAIHarvester.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7D51BB524A100FF431E /* OAIHarvester.m */; };
+		52FCF7F61BB52AD100FF431E /* Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7E51BB52AD100FF431E /* Identifier.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7F71BB52AD100FF431E /* Identify.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7E71BB52AD100FF431E /* Identify.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7F81BB52AD100FF431E /* MetadataElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7E91BB52AD100FF431E /* MetadataElement.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7F91BB52AD100FF431E /* MetadataFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7EB1BB52AD100FF431E /* MetadataFormat.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7FA1BB52AD100FF431E /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7ED1BB52AD100FF431E /* Record.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7FB1BB52AD100FF431E /* RecordHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7EF1BB52AD100FF431E /* RecordHeader.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7FC1BB52AD100FF431E /* RecordMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7F11BB52AD100FF431E /* RecordMetadata.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7FD1BB52AD100FF431E /* ResumptionToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7F31BB52AD100FF431E /* ResumptionToken.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF7FE1BB52AD100FF431E /* Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7F51BB52AD100FF431E /* Set.m */; settings = {ASSET_TAGS = (); }; };
+		52FCF8041BB52AFA00FF431E /* HarvesterError.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF8031BB52AFA00FF431E /* HarvesterError.m */; settings = {ASSET_TAGS = (); }; };
+		852268EBA86CDDFDADF976DE /* libPods-OAIHarvester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA44E3931696305968E8CD6 /* libPods-OAIHarvester.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		527291151642D1760020F38D /* CopyFiles */ = {
+		52FCF7CE1BB524A100FF431E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				527291201642D1760020F38D /* OAIHarvester.h in CopyFiles */,
+				52FCF7D41BB524A100FF431E /* OAIHarvester.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5225988816454ADC007E6097 /* Identify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identify.h; sourceTree = "<group>"; };
-		5225988916454ADC007E6097 /* Identify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Identify.m; sourceTree = "<group>"; };
-		5225988C16454AEB007E6097 /* MetadataFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataFormat.h; sourceTree = "<group>"; };
-		5225988D16454AEB007E6097 /* MetadataFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataFormat.m; sourceTree = "<group>"; };
-		5225988F16454B07007E6097 /* Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Set.h; sourceTree = "<group>"; };
-		5225989016454B07007E6097 /* Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Set.m; sourceTree = "<group>"; };
-		5225989216454B1F007E6097 /* ResumptionToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumptionToken.h; sourceTree = "<group>"; };
-		5225989316454B1F007E6097 /* ResumptionToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumptionToken.m; sourceTree = "<group>"; };
-		522599C516459AEA007E6097 /* Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identifier.h; sourceTree = "<group>"; };
-		522599C616459AEA007E6097 /* Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Identifier.m; sourceTree = "<group>"; };
-		527291171642D1760020F38D /* libOAIHarvester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOAIHarvester.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5272911A1642D1760020F38D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5272911E1642D1760020F38D /* OAIHarvester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAIHarvester-Prefix.pch"; sourceTree = "<group>"; };
-		5272911F1642D1760020F38D /* OAIHarvester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAIHarvester.h; sourceTree = "<group>"; };
-		527291211642D1760020F38D /* OAIHarvester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAIHarvester.m; sourceTree = "<group>"; };
-		527291291642D32A0020F38D /* RecordMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordMetadata.h; sourceTree = "<group>"; };
-		5272912A1642D32A0020F38D /* RecordMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordMetadata.m; sourceTree = "<group>"; };
-		5272912C1642D4680020F38D /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
-		5272912D1642D4680020F38D /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
-		5272915B1642D5C30020F38D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		5272923E164332D40020F38D /* HarvesterError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarvesterError.h; sourceTree = "<group>"; };
-		5272923F164332D40020F38D /* HarvesterError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HarvesterError.m; sourceTree = "<group>"; };
-		52729241164332D40020F38D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		52729243164332F10020F38D /* MetadataElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataElement.h; sourceTree = "<group>"; };
-		52729244164332F10020F38D /* MetadataElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataElement.m; sourceTree = "<group>"; };
-		52729245164332F10020F38D /* RecordHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordHeader.h; sourceTree = "<group>"; };
-		52729246164332F10020F38D /* RecordHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordHeader.m; sourceTree = "<group>"; };
-		527320C9165169770067DF4E /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
-		527320CA165169770067DF4E /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
-		527320CB165169770067DF4E /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
-		527320CC165169770067DF4E /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
-		527320CD165169770067DF4E /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
-		527320CE165169770067DF4E /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
-		527320CF165169770067DF4E /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
-		527320D0165169770067DF4E /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
-		527320D1165169770067DF4E /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
-		527320D2165169770067DF4E /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
-		527320D3165169770067DF4E /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
-		527320D4165169770067DF4E /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
-		527320D5165169770067DF4E /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
-		527320D6165169770067DF4E /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
-		527320D7165169770067DF4E /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
-		527320D8165169770067DF4E /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
-		527320D9165169770067DF4E /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
-		527320DA165169770067DF4E /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
-		527320DB165169770067DF4E /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
-		527320DC165169770067DF4E /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
-		527320DD165169770067DF4E /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
-		527320DE165169770067DF4E /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
-		527320DF165169770067DF4E /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
-		527320E0165169770067DF4E /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
-		527320E2165169770067DF4E /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
-		527320E3165169770067DF4E /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
-		527320E4165169770067DF4E /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		2EB534AC5FF1A4F5CA158AD4 /* Pods-OAIHarvester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAIHarvester.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAIHarvester/Pods-OAIHarvester.release.xcconfig"; sourceTree = "<group>"; };
+		52FCF7D01BB524A100FF431E /* libOAIHarvester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOAIHarvester.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FCF7D31BB524A100FF431E /* OAIHarvester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAIHarvester.h; sourceTree = "<group>"; };
+		52FCF7D51BB524A100FF431E /* OAIHarvester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAIHarvester.m; sourceTree = "<group>"; };
+		52FCF7E41BB52AD100FF431E /* Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Identifier.h; path = domain/Identifier.h; sourceTree = "<group>"; };
+		52FCF7E51BB52AD100FF431E /* Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Identifier.m; path = domain/Identifier.m; sourceTree = "<group>"; };
+		52FCF7E61BB52AD100FF431E /* Identify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Identify.h; path = domain/Identify.h; sourceTree = "<group>"; };
+		52FCF7E71BB52AD100FF431E /* Identify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Identify.m; path = domain/Identify.m; sourceTree = "<group>"; };
+		52FCF7E81BB52AD100FF431E /* MetadataElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetadataElement.h; path = domain/MetadataElement.h; sourceTree = "<group>"; };
+		52FCF7E91BB52AD100FF431E /* MetadataElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetadataElement.m; path = domain/MetadataElement.m; sourceTree = "<group>"; };
+		52FCF7EA1BB52AD100FF431E /* MetadataFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetadataFormat.h; path = domain/MetadataFormat.h; sourceTree = "<group>"; };
+		52FCF7EB1BB52AD100FF431E /* MetadataFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetadataFormat.m; path = domain/MetadataFormat.m; sourceTree = "<group>"; };
+		52FCF7EC1BB52AD100FF431E /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Record.h; path = domain/Record.h; sourceTree = "<group>"; };
+		52FCF7ED1BB52AD100FF431E /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Record.m; path = domain/Record.m; sourceTree = "<group>"; };
+		52FCF7EE1BB52AD100FF431E /* RecordHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordHeader.h; path = domain/RecordHeader.h; sourceTree = "<group>"; };
+		52FCF7EF1BB52AD100FF431E /* RecordHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordHeader.m; path = domain/RecordHeader.m; sourceTree = "<group>"; };
+		52FCF7F01BB52AD100FF431E /* RecordMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordMetadata.h; path = domain/RecordMetadata.h; sourceTree = "<group>"; };
+		52FCF7F11BB52AD100FF431E /* RecordMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordMetadata.m; path = domain/RecordMetadata.m; sourceTree = "<group>"; };
+		52FCF7F21BB52AD100FF431E /* ResumptionToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResumptionToken.h; path = domain/ResumptionToken.h; sourceTree = "<group>"; };
+		52FCF7F31BB52AD100FF431E /* ResumptionToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResumptionToken.m; path = domain/ResumptionToken.m; sourceTree = "<group>"; };
+		52FCF7F41BB52AD100FF431E /* Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Set.h; path = domain/Set.h; sourceTree = "<group>"; };
+		52FCF7F51BB52AD100FF431E /* Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Set.m; path = domain/Set.m; sourceTree = "<group>"; };
+		52FCF8011BB52AF000FF431E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = localizations/Localizable.strings; sourceTree = "<group>"; };
+		52FCF8021BB52AFA00FF431E /* HarvesterError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HarvesterError.h; path = errors/HarvesterError.h; sourceTree = "<group>"; };
+		52FCF8031BB52AFA00FF431E /* HarvesterError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HarvesterError.m; path = errors/HarvesterError.m; sourceTree = "<group>"; };
+		77A4C5487E26F003E7DFFEFD /* Pods-OAIHarvester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAIHarvester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAIHarvester/Pods-OAIHarvester.debug.xcconfig"; sourceTree = "<group>"; };
+		ADA44E3931696305968E8CD6 /* libPods-OAIHarvester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OAIHarvester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		527291141642D1760020F38D /* Frameworks */ = {
+		52FCF7CD1BB524A100FF431E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5272915C1642D5C30020F38D /* libxml2.dylib in Frameworks */,
-				5272911B1642D1760020F38D /* Foundation.framework in Frameworks */,
+				852268EBA86CDDFDADF976DE /* libPods-OAIHarvester.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5272910C1642D1760020F38D = {
+		52FCF7C71BB524A100FF431E = {
 			isa = PBXGroup;
 			children = (
-				5272911C1642D1760020F38D /* OAIHarvester */,
-				527291191642D1760020F38D /* Frameworks */,
-				527291181642D1760020F38D /* Products */,
+				52FCF7D21BB524A100FF431E /* OAIHarvester */,
+				52FCF7D11BB524A100FF431E /* Products */,
+				72DCF8946B99820F527202A1 /* Pods */,
+				713218C3E1FA90C39A8D4395 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		527291181642D1760020F38D /* Products */ = {
+		52FCF7D11BB524A100FF431E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				527291171642D1760020F38D /* libOAIHarvester.a */,
+				52FCF7D01BB524A100FF431E /* libOAIHarvester.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		527291191642D1760020F38D /* Frameworks */ = {
+		52FCF7D21BB524A100FF431E /* OAIHarvester */ = {
 			isa = PBXGroup;
 			children = (
-				5272915B1642D5C30020F38D /* libxml2.dylib */,
-				5272911A1642D1760020F38D /* Foundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5272911C1642D1760020F38D /* OAIHarvester */ = {
-			isa = PBXGroup;
-			children = (
-				5272912F1642D5B20020F38D /* utilities */,
-				5272923D164332D40020F38D /* errors */,
-				52729240164332D40020F38D /* localizations */,
-				527291281642D1A40020F38D /* domain */,
-				5272911F1642D1760020F38D /* OAIHarvester.h */,
-				527291211642D1760020F38D /* OAIHarvester.m */,
-				5272911D1642D1760020F38D /* Supporting Files */,
+				52FCF7D31BB524A100FF431E /* OAIHarvester.h */,
+				52FCF7D51BB524A100FF431E /* OAIHarvester.m */,
+				52FCF8001BB52AE400FF431E /* localizations */,
+				52FCF7FF1BB52AD900FF431E /* errors */,
+				52FCF7E31BB52AC400FF431E /* domain */,
 			);
 			path = OAIHarvester;
 			sourceTree = "<group>";
 		};
-		5272911D1642D1760020F38D /* Supporting Files */ = {
+		52FCF7E31BB52AC400FF431E /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				5272911E1642D1760020F38D /* OAIHarvester-Prefix.pch */,
+				52FCF7E41BB52AD100FF431E /* Identifier.h */,
+				52FCF7E51BB52AD100FF431E /* Identifier.m */,
+				52FCF7E61BB52AD100FF431E /* Identify.h */,
+				52FCF7E71BB52AD100FF431E /* Identify.m */,
+				52FCF7E81BB52AD100FF431E /* MetadataElement.h */,
+				52FCF7E91BB52AD100FF431E /* MetadataElement.m */,
+				52FCF7EA1BB52AD100FF431E /* MetadataFormat.h */,
+				52FCF7EB1BB52AD100FF431E /* MetadataFormat.m */,
+				52FCF7EC1BB52AD100FF431E /* Record.h */,
+				52FCF7ED1BB52AD100FF431E /* Record.m */,
+				52FCF7EE1BB52AD100FF431E /* RecordHeader.h */,
+				52FCF7EF1BB52AD100FF431E /* RecordHeader.m */,
+				52FCF7F01BB52AD100FF431E /* RecordMetadata.h */,
+				52FCF7F11BB52AD100FF431E /* RecordMetadata.m */,
+				52FCF7F21BB52AD100FF431E /* ResumptionToken.h */,
+				52FCF7F31BB52AD100FF431E /* ResumptionToken.m */,
+				52FCF7F41BB52AD100FF431E /* Set.h */,
+				52FCF7F51BB52AD100FF431E /* Set.m */,
 			);
-			name = "Supporting Files";
+			name = domain;
 			sourceTree = "<group>";
 		};
-		527291281642D1A40020F38D /* domain */ = {
+		52FCF7FF1BB52AD900FF431E /* errors */ = {
 			isa = PBXGroup;
 			children = (
-				527291291642D32A0020F38D /* RecordMetadata.h */,
-				5272912A1642D32A0020F38D /* RecordMetadata.m */,
-				5272912C1642D4680020F38D /* Record.h */,
-				5272912D1642D4680020F38D /* Record.m */,
-				52729243164332F10020F38D /* MetadataElement.h */,
-				52729244164332F10020F38D /* MetadataElement.m */,
-				52729245164332F10020F38D /* RecordHeader.h */,
-				52729246164332F10020F38D /* RecordHeader.m */,
-				5225988816454ADC007E6097 /* Identify.h */,
-				5225988916454ADC007E6097 /* Identify.m */,
-				5225988C16454AEB007E6097 /* MetadataFormat.h */,
-				5225988D16454AEB007E6097 /* MetadataFormat.m */,
-				5225988F16454B07007E6097 /* Set.h */,
-				5225989016454B07007E6097 /* Set.m */,
-				5225989216454B1F007E6097 /* ResumptionToken.h */,
-				5225989316454B1F007E6097 /* ResumptionToken.m */,
-				522599C516459AEA007E6097 /* Identifier.h */,
-				522599C616459AEA007E6097 /* Identifier.m */,
+				52FCF8021BB52AFA00FF431E /* HarvesterError.h */,
+				52FCF8031BB52AFA00FF431E /* HarvesterError.m */,
 			);
-			path = domain;
+			name = errors;
 			sourceTree = "<group>";
 		};
-		5272912F1642D5B20020F38D /* utilities */ = {
+		52FCF8001BB52AE400FF431E /* localizations */ = {
 			isa = PBXGroup;
 			children = (
-				527320BC165169770067DF4E /* TouchXML */,
+				52FCF8011BB52AF000FF431E /* Localizable.strings */,
 			);
-			path = utilities;
+			name = localizations;
 			sourceTree = "<group>";
 		};
-		5272923D164332D40020F38D /* errors */ = {
+		713218C3E1FA90C39A8D4395 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5272923E164332D40020F38D /* HarvesterError.h */,
-				5272923F164332D40020F38D /* HarvesterError.m */,
+				ADA44E3931696305968E8CD6 /* libPods-OAIHarvester.a */,
 			);
-			path = errors;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		52729240164332D40020F38D /* localizations */ = {
+		72DCF8946B99820F527202A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52729241164332D40020F38D /* Localizable.strings */,
+				77A4C5487E26F003E7DFFEFD /* Pods-OAIHarvester.debug.xcconfig */,
+				2EB534AC5FF1A4F5CA158AD4 /* Pods-OAIHarvester.release.xcconfig */,
 			);
-			path = localizations;
-			sourceTree = "<group>";
-		};
-		527320BC165169770067DF4E /* TouchXML */ = {
-			isa = PBXGroup;
-			children = (
-				527320C7165169770067DF4E /* Source */,
-			);
-			path = TouchXML;
-			sourceTree = "<group>";
-		};
-		527320C7165169770067DF4E /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				527320C8165169770067DF4E /* Creation */,
-				527320CD165169770067DF4E /* CXHTMLDocument.h */,
-				527320CE165169770067DF4E /* CXHTMLDocument.m */,
-				527320CF165169770067DF4E /* CXMLDocument.h */,
-				527320D0165169770067DF4E /* CXMLDocument.m */,
-				527320D1165169770067DF4E /* CXMLDocument_PrivateExtensions.h */,
-				527320D2165169770067DF4E /* CXMLDocument_PrivateExtensions.m */,
-				527320D3165169770067DF4E /* CXMLElement.h */,
-				527320D4165169770067DF4E /* CXMLElement.m */,
-				527320D5165169770067DF4E /* CXMLElement_CreationExtensions.h */,
-				527320D6165169770067DF4E /* CXMLElement_CreationExtensions.m */,
-				527320D7165169770067DF4E /* CXMLElement_ElementTreeExtensions.h */,
-				527320D8165169770067DF4E /* CXMLElement_ElementTreeExtensions.m */,
-				527320D9165169770067DF4E /* CXMLNamespaceNode.h */,
-				527320DA165169770067DF4E /* CXMLNamespaceNode.m */,
-				527320DB165169770067DF4E /* CXMLNode.h */,
-				527320DC165169770067DF4E /* CXMLNode.m */,
-				527320DD165169770067DF4E /* CXMLNode_PrivateExtensions.h */,
-				527320DE165169770067DF4E /* CXMLNode_PrivateExtensions.m */,
-				527320DF165169770067DF4E /* CXMLNode_XPathExtensions.h */,
-				527320E0165169770067DF4E /* CXMLNode_XPathExtensions.m */,
-				527320E1165169770067DF4E /* Tidy */,
-				527320E4165169770067DF4E /* TouchXML.h */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		527320C8165169770067DF4E /* Creation */ = {
-			isa = PBXGroup;
-			children = (
-				527320C9165169770067DF4E /* CXMLDocument_CreationExtensions.h */,
-				527320CA165169770067DF4E /* CXMLDocument_CreationExtensions.m */,
-				527320CB165169770067DF4E /* CXMLNode_CreationExtensions.h */,
-				527320CC165169770067DF4E /* CXMLNode_CreationExtensions.m */,
-			);
-			path = Creation;
-			sourceTree = "<group>";
-		};
-		527320E1165169770067DF4E /* Tidy */ = {
-			isa = PBXGroup;
-			children = (
-				527320E2165169770067DF4E /* CTidy.h */,
-				527320E3165169770067DF4E /* CTidy.m */,
-			);
-			path = Tidy;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		527291161642D1760020F38D /* OAIHarvester */ = {
+		52FCF7CF1BB524A100FF431E /* OAIHarvester */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 527291251642D1760020F38D /* Build configuration list for PBXNativeTarget "OAIHarvester" */;
+			buildConfigurationList = 52FCF7D91BB524A100FF431E /* Build configuration list for PBXNativeTarget "OAIHarvester" */;
 			buildPhases = (
-				527291131642D1760020F38D /* Sources */,
-				527291141642D1760020F38D /* Frameworks */,
-				527291151642D1760020F38D /* CopyFiles */,
+				E85DD5236DD507DDC886786B /* Check Pods Manifest.lock */,
+				52FCF7CC1BB524A100FF431E /* Sources */,
+				52FCF7CD1BB524A100FF431E /* Frameworks */,
+				52FCF7CE1BB524A100FF431E /* CopyFiles */,
+				9A7D1175F367E3E481B5A3E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,134 +185,191 @@
 			);
 			name = OAIHarvester;
 			productName = OAIHarvester;
-			productReference = 527291171642D1760020F38D /* libOAIHarvester.a */;
+			productReference = 52FCF7D01BB524A100FF431E /* libOAIHarvester.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5272910E1642D1760020F38D /* Project object */ = {
+		52FCF7C81BB524A100FF431E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Kostas Stamatis";
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "National Documentation Center (EKT)";
+				TargetAttributes = {
+					52FCF7CF1BB524A100FF431E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
 			};
-			buildConfigurationList = 527291111642D1760020F38D /* Build configuration list for PBXProject "OAIHarvester" */;
+			buildConfigurationList = 52FCF7CB1BB524A100FF431E /* Build configuration list for PBXProject "OAIHarvester" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5272910C1642D1760020F38D;
-			productRefGroup = 527291181642D1760020F38D /* Products */;
+			mainGroup = 52FCF7C71BB524A100FF431E;
+			productRefGroup = 52FCF7D11BB524A100FF431E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				527291161642D1760020F38D /* OAIHarvester */,
+				52FCF7CF1BB524A100FF431E /* OAIHarvester */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A7D1175F367E3E481B5A3E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAIHarvester/Pods-OAIHarvester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E85DD5236DD507DDC886786B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		527291131642D1760020F38D /* Sources */ = {
+		52FCF7CC1BB524A100FF431E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527291221642D1760020F38D /* OAIHarvester.m in Sources */,
-				5272912B1642D32A0020F38D /* RecordMetadata.m in Sources */,
-				5272912E1642D4680020F38D /* Record.m in Sources */,
-				52729242164332D40020F38D /* HarvesterError.m in Sources */,
-				52729247164332F10020F38D /* MetadataElement.m in Sources */,
-				52729248164332F10020F38D /* RecordHeader.m in Sources */,
-				5225988A16454ADC007E6097 /* Identify.m in Sources */,
-				5225988E16454AEB007E6097 /* MetadataFormat.m in Sources */,
-				5225989116454B07007E6097 /* Set.m in Sources */,
-				5225989416454B1F007E6097 /* ResumptionToken.m in Sources */,
-				522599C716459AEA007E6097 /* Identifier.m in Sources */,
-				52732381165169780067DF4E /* CXMLDocument_CreationExtensions.m in Sources */,
-				52732382165169780067DF4E /* CXMLNode_CreationExtensions.m in Sources */,
-				52732383165169780067DF4E /* CXHTMLDocument.m in Sources */,
-				52732384165169780067DF4E /* CXMLDocument.m in Sources */,
-				52732385165169780067DF4E /* CXMLDocument_PrivateExtensions.m in Sources */,
-				52732386165169780067DF4E /* CXMLElement.m in Sources */,
-				52732387165169780067DF4E /* CXMLElement_CreationExtensions.m in Sources */,
-				52732388165169780067DF4E /* CXMLElement_ElementTreeExtensions.m in Sources */,
-				52732389165169780067DF4E /* CXMLNamespaceNode.m in Sources */,
-				5273238A165169780067DF4E /* CXMLNode.m in Sources */,
-				5273238B165169780067DF4E /* CXMLNode_PrivateExtensions.m in Sources */,
-				5273238C165169780067DF4E /* CXMLNode_XPathExtensions.m in Sources */,
-				5273238D165169780067DF4E /* CTidy.m in Sources */,
+				52FCF7F71BB52AD100FF431E /* Identify.m in Sources */,
+				52FCF7F91BB52AD100FF431E /* MetadataFormat.m in Sources */,
+				52FCF7FB1BB52AD100FF431E /* RecordHeader.m in Sources */,
+				52FCF7FC1BB52AD100FF431E /* RecordMetadata.m in Sources */,
+				52FCF7F61BB52AD100FF431E /* Identifier.m in Sources */,
+				52FCF7D61BB524A100FF431E /* OAIHarvester.m in Sources */,
+				52FCF8041BB52AFA00FF431E /* HarvesterError.m in Sources */,
+				52FCF7FA1BB52AD100FF431E /* Record.m in Sources */,
+				52FCF7FD1BB52AD100FF431E /* ResumptionToken.m in Sources */,
+				52FCF7FE1BB52AD100FF431E /* Set.m in Sources */,
+				52FCF7F81BB52AD100FF431E /* MetadataElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		527291231642D1760020F38D /* Debug */ = {
+		52FCF7D71BB524A100FF431E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		527291241642D1760020F38D /* Release */ = {
+		52FCF7D81BB524A100FF431E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		527291261642D1760020F38D /* Debug */ = {
+		52FCF7DA1BB524A100FF431E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A4C5487E26F003E7DFFEFD /* Pods-OAIHarvester.debug.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/OAIHarvester.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OAIHarvester/OAIHarvester-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		527291271642D1760020F38D /* Release */ = {
+		52FCF7DB1BB524A100FF431E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB534AC5FF1A4F5CA158AD4 /* Pods-OAIHarvester.release.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/OAIHarvester.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OAIHarvester/OAIHarvester-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -429,25 +379,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		527291111642D1760020F38D /* Build configuration list for PBXProject "OAIHarvester" */ = {
+		52FCF7CB1BB524A100FF431E /* Build configuration list for PBXProject "OAIHarvester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				527291231642D1760020F38D /* Debug */,
-				527291241642D1760020F38D /* Release */,
+				52FCF7D71BB524A100FF431E /* Debug */,
+				52FCF7D81BB524A100FF431E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		527291251642D1760020F38D /* Build configuration list for PBXNativeTarget "OAIHarvester" */ = {
+		52FCF7D91BB524A100FF431E /* Build configuration list for PBXNativeTarget "OAIHarvester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				527291261642D1760020F38D /* Debug */,
-				527291271642D1760020F38D /* Release */,
+				52FCF7DA1BB524A100FF431E /* Debug */,
+				52FCF7DB1BB524A100FF431E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5272910E1642D1760020F38D /* Project object */;
+	rootObject = 52FCF7C81BB524A100FF431E /* Project object */;
 }

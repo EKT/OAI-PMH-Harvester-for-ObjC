@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "OAIHarvester.h"
+
 @interface MetadataElement : NSObject{
     
     NSString *name;

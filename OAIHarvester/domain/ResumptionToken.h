@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "OAIHarvester.h"
+
 @interface ResumptionToken : NSObject {
     
     NSString *expireDate;

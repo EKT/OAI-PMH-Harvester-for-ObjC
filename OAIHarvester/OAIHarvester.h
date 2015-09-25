@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Record.h"
-#import "Identify.h"
-#import "MetadataFormat.h"
-#import "Set.h"
-#import "ResumptionToken.h"
-#import "Identifier.h"
-#import "HarvesterError.h"
+#import "TouchXML.h"
+
+@class Record;
+@class Identify;
+@class MetadataFormat;
+@class Set;
+@class ResumptionToken;
+@class Identifier;
+@class HarvesterError;
 
 #define BASE_NAMESPACE @"http://www.openarchives.org/OAI/2.0/"
 

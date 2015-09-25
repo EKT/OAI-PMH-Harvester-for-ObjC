@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "OAIHarvester.h"
+
 @interface Identifier : NSObject {
     NSString *identifier;
     NSString *datestamp;

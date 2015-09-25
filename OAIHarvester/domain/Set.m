@@ -30,16 +30,4 @@
     return self;
 }
 
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [name release];
-    [children release];
-    [spec release];
-    
-    [fullSpec release];
-    
-    [super dealloc];
-}
-
 @end

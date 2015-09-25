@@ -24,15 +24,4 @@
     return self;
 }
 
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [schema release];
-    [prefix release];
-    [namespce release];
-    
-    [super dealloc];
-}
-
-
 @end

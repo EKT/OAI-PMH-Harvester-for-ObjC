@@ -33,7 +33,7 @@
         //setSpecs
         NSArray *setNodes = [headerXMLElement  elementsForLocalName:@"setSpec" URI:BASE_NAMESPACE];
         if ([setNodes count]>0) {
-            self.setSpecs = [[[NSMutableArray alloc] initWithCapacity:[setNodes count]] autorelease];
+            self.setSpecs = [[NSMutableArray alloc] initWithCapacity:[setNodes count]];
             for (CXMLNode *node in setNodes){
                 [self.setSpecs addObject:[node stringValue]];
             }
@@ -52,16 +52,6 @@
         }
     }
     return self;
-}
-
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [identifier release];
-    [datestamp release];
-    [setSpecs release];
-    
-    [super dealloc];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "OAIHarvester.h"
+
 @interface MetadataFormat : NSObject {
     
     NSString *schema;

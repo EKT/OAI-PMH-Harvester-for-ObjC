@@ -8,6 +8,14 @@
 
 #import "OAIHarvester.h"
 
+#import "Record.h"
+#import "Identify.h"
+#import "MetadataFormat.h"
+#import "Set.h"
+#import "ResumptionToken.h"
+#import "Identifier.h"
+#import "HarvesterError.h"
+
 @interface OAIHarvester ()
 
 - (void) checkResponseForError:(CXMLElement *)oaiPmhElement withError:(NSError **)error;
@@ -54,7 +62,7 @@
 
 #pragma mark - Setters
 - (void) setBaseURL:(NSString *)theBaseURL {
-    baseURL = [theBaseURL retain];
+    baseURL = theBaseURL;
     [self identifyWithError:nil];
     [self listMetadataFormatsWithError:nil];
     [self listSetsWithError:nil];
@@ -68,8 +76,8 @@
     NSArray *errors = [oaiPmhElement nodesForXPath:@"//oai-pmh:error" namespaceMappings:namespaceMappings error:&err];
     if (!err && [errors count]>0){
         CXMLElement *errorElement = [errors objectAtIndex:0];
-        NSString *code = [[[errorElement attributeForName:@"code"] stringValue] retain];
-        HarvesterError *harvesterError = [[[HarvesterError alloc] initWithDomain:[NSString stringWithFormat:@"harvester.oaipmh.error.%@", code] code:0 userInfo:nil] autorelease];
+        NSString *code = [[errorElement attributeForName:@"code"] stringValue];
+        HarvesterError *harvesterError = [[HarvesterError alloc] initWithDomain:[NSString stringWithFormat:@"harvester.oaipmh.error.%@", code] code:0 userInfo:nil];
         *error = harvesterError;
     }
     else {
@@ -139,7 +147,7 @@
     NSError *err = nil;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     if (!err){
-        CXMLDocument *document = [[[CXMLDocument alloc] initWithData:responseData options:0 error:&err] autorelease];
+        CXMLDocument *document = [[CXMLDocument alloc] initWithData:responseData options:0 error:&err];
         if (!err){
             CXMLElement *oaiPmhElement = [document rootElement];
             
@@ -162,7 +170,7 @@
                     //    [self.resumptionToken release];
                     //    self.resumptionToken = nil;
                     //}
-                    self.resumptionToken = [[[ResumptionToken alloc] initWithXMLElement:[resumptionTokens objectAtIndex:0]] autorelease];
+                    self.resumptionToken = [[ResumptionToken alloc] initWithXMLElement:[resumptionTokens objectAtIndex:0]];
                     NSLog(@"Token: %@", self.resumptionToken.token);
                 }
             }
@@ -175,12 +183,11 @@
             for (CXMLElement *recordNode in records2){
                 Record *record = [[Record alloc] initWithXMLElement:recordNode];
                 [results addObject:record];
-                [record release];
             }
             
             self.records = results;
             
-            return [results autorelease];
+            return results;
         }
         *error = err;
         return nil;
@@ -251,7 +258,7 @@
     NSError *err = nil;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     if (!err){
-        CXMLDocument *document = [[[CXMLDocument alloc] initWithData:responseData options:0 error:&err] autorelease];
+        CXMLDocument *document = [[CXMLDocument alloc] initWithData:responseData options:0 error:&err];
         if (!err){
             CXMLElement *oaiPmhElement = [document rootElement];
             
@@ -274,7 +281,7 @@
                     //    [self.resumptionToken release];
                     //    self.resumptionToken = nil;
                     //}
-                    self.identifiersResumptionToken = [[[ResumptionToken alloc] initWithXMLElement:[resumptionTokens objectAtIndex:0]] autorelease];
+                    self.identifiersResumptionToken = [[ResumptionToken alloc] initWithXMLElement:[resumptionTokens objectAtIndex:0]];
                     NSLog(@"Indentifiers Token: %@", self.identifiersResumptionToken.token);
                 }
             }
@@ -287,12 +294,11 @@
             for (CXMLElement *recordNode in identifiers2){
                 Identifier *identifier = [[Identifier alloc] initWithXMLElement:recordNode];
                 [results addObject:identifier];
-                [identifier release];
             }
             
             self.identifiers = results;
             
-            return [results autorelease];
+            return results;
         }
         *error = err;
         return nil;
@@ -319,7 +325,7 @@
     NSError *err = nil;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     if (!err){
-        CXMLDocument *document = [[[CXMLDocument alloc] initWithData:responseData options:0 error:&err] autorelease];
+        CXMLDocument *document = [[CXMLDocument alloc] initWithData:responseData options:0 error:&err];
         if (!err){
             CXMLElement *oaiPmhElement = [document rootElement];
             
@@ -337,12 +343,11 @@
             Identify *identify2 = [[Identify alloc] initWithXMLElement:identifyNode];
             
             if (self.identify){
-                [self.identify release];
                 self.identify = nil;
             }
             self.identify = identify2;
             
-            return [identify2 autorelease];
+            return identify2;
         }
         *error = err;
         return nil;
@@ -378,7 +383,7 @@
     NSError *err = nil;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     if (!err){
-        CXMLDocument *document = [[[CXMLDocument alloc] initWithData:responseData options:0 error:&err] autorelease];
+        CXMLDocument *document = [[CXMLDocument alloc] initWithData:responseData options:0 error:&err];
         if (!err){
             CXMLElement *oaiPmhElement = [document rootElement];
             
@@ -395,18 +400,16 @@
             for (CXMLElement *formatElement in formatArray){
                 MetadataFormat *format = [[MetadataFormat alloc] initWithXMLElement:formatElement];
                 [results addObject:format];
-                [format release];
             }
             
             if (!itemIdentifier){
                 if (self.metadataFormats){
-                    [self.metadataFormats release];
                     self.metadataFormats = nil;
                 }
                 self.metadataFormats = results;
             }
             
-            return [results autorelease];
+            return results;
         }
         *error = err;
         return nil;
@@ -434,7 +437,7 @@
     NSError *err = nil;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     if (!err){
-        CXMLDocument *document = [[[CXMLDocument alloc] initWithData:responseData options:0 error:&err] autorelease];
+        CXMLDocument *document = [[CXMLDocument alloc] initWithData:responseData options:0 error:&err];
         if (!err){
             CXMLElement *oaiPmhElement = [document rootElement];
             
@@ -451,16 +454,14 @@
             for (CXMLElement *setElement in formatArray){
                 Set *set = [[Set alloc] initWithXMLElement:setElement];
                 [allSets addObject:set];
-                [set release];
             }
             
             if (self.sets){
-                [self.sets release];
                 self.sets = nil;
             }
             self.sets = allSets;
             
-            return [allSets autorelease];
+            return allSets;
         }
         *error = err;
         return nil;
@@ -494,7 +495,7 @@
     NSError *err = nil;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     if (!err){
-        CXMLDocument *document = [[[CXMLDocument alloc] initWithData:responseData options:0 error:&err] autorelease];
+        CXMLDocument *document = [[CXMLDocument alloc] initWithData:responseData options:0 error:&err];
         if (!err){
             CXMLElement *oaiPmhElement = [document rootElement];
             
@@ -510,7 +511,7 @@
             
             for (CXMLElement *recordNode in records2){
                 Record *record = [[Record alloc] initWithXMLElement:recordNode];
-                return [record autorelease];
+                return record;
             }
         }
         *error = err;
@@ -518,23 +519,6 @@
     }
     *error = err;
     return nil;
-}
-
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [baseURL release];
-    [metadataPrefix release];
-    [setSpec release];
-    
-    [resumptionToken release];
-    
-    [identify release];
-    [metadataFormats release];
-    [sets release];
-    [records release];
-    
-    [super dealloc];
 }
 
 @end

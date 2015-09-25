@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "OAIHarvester.h"
+
 typedef enum
 {
     NO_DELETION = 0,

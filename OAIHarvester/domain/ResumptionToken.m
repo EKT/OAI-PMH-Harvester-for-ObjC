@@ -26,12 +26,4 @@
     return self;
 }
 
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [token release];
-    [expireDate release];
-    
-    [super dealloc];
-}
 @end

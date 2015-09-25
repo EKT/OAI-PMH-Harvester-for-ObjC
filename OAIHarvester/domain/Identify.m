@@ -37,41 +37,24 @@
         }
         
         NSArray *emails = [xmlElement elementsForLocalName:@"adminEmail" URI:BASE_NAMESPACE];
-        self.adminEmails = [[[NSMutableArray alloc] init] autorelease];
+        self.adminEmails = [[NSMutableArray alloc] init];
         for (CXMLElement *emailElement in emails){
             [self.adminEmails addObject:[emailElement stringValue]];
         }
         
         NSArray *compressionsArray = [xmlElement elementsForLocalName:@"compression" URI:BASE_NAMESPACE];
-        self.compressions = [[[NSMutableArray alloc] init] autorelease];
+        self.compressions = [[NSMutableArray alloc] init];
         for (CXMLElement *compressionElement in compressionsArray){
             [self.compressions addObject:[compressionElement stringValue]];
         }
         
         NSArray *descriptionsArray = [xmlElement elementsForLocalName:@"description" URI:BASE_NAMESPACE];
-        self.descriptions = [[[NSMutableArray alloc] init] autorelease];
+        self.descriptions = [[NSMutableArray alloc] init];
         for (CXMLElement *descriptionElement in descriptionsArray){
             [self.descriptions addObject:[descriptionElement XMLString]];
         }
     }
     return self;
 }
-
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [repositoryName release];
-    [baseURL release];
-    [protocolVersion release];
-    [earliestDatestamp release];
-    [granularity release];
-    
-    [adminEmails release];
-    [descriptions release];
-    [compressions release];
-    
-    [super dealloc];
-}
-    
 
 @end

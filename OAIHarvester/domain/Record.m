@@ -23,18 +23,10 @@
         NSArray *metadataArray = [recordXMLElement elementsForLocalName:@"metadata" URI:BASE_NAMESPACE];
         if ([metadataArray count]>0)
             metadataElement = [metadataArray objectAtIndex:0];
-        self.recordMetadata = [[[RecordMetadata alloc] initWithXMLElement:metadataElement] autorelease];
-        self.recordHeader = [[[RecordHeader alloc] initWithXMLElement:headerElement] autorelease];
+        self.recordMetadata = [[RecordMetadata alloc] initWithXMLElement:metadataElement];
+        self.recordHeader = [[RecordHeader alloc] initWithXMLElement:headerElement];
     }
     return self;
-}
-
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [recordMetadata release];
-    
-    [super dealloc];
 }
 
 @end

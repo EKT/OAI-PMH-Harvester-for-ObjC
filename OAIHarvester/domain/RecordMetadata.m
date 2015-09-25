@@ -28,25 +28,14 @@
             self.schemaLocation = [[[rootElement attributeForName:@"schemaLocation"] stringValue] stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@ ", self.namespce] withString:@""];
             
             NSArray *metadataXMLElements = [rootElement children];
-            self.metadataElements = [[[NSMutableArray alloc] init] autorelease];
+            self.metadataElements = [[NSMutableArray alloc] init];
             for (CXMLElement *metadataXMLElement2 in metadataXMLElements){
                 MetadataElement *metadataElement = [[MetadataElement alloc] initWithXMLElement:metadataXMLElement2];
                 [self.metadataElements addObject:metadataElement];
-                [metadataElement release];
             }
         }
     }
     return self;
-}
-
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [namespce release];
-    [schemaLocation release];
-    [metadataElements release];
-    
-    [super dealloc];
 }
 
 @end

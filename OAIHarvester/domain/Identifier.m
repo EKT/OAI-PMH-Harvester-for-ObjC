@@ -23,12 +23,4 @@
     return self;
 }
 
-#pragma mark - Memory Management
-- (void) dealloc {
-    
-    [identifier release];
-    [datestamp release];
-    
-    [super dealloc];
-}
 @end
