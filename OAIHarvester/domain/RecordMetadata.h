@@ -9,17 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "MetadataElement.h"
 
-@interface RecordMetadata : NSObject{
-    
-    NSString *namespce;
-    NSString *schemaLocation;
-    NSMutableArray *metadataElements;
-    
-}
+@interface RecordMetadata : NSObject
 
-@property (nonatomic, retain) NSString *namespce;
-@property (nonatomic, retain) NSString *schemaLocation;
-@property (nonatomic, retain) NSMutableArray *metadataElements;
+@property (nonatomic, strong) NSString *namespce;
+@property (nonatomic, strong) NSString *schemaLocation;
+@property (nonatomic, strong) NSMutableArray *metadataElements;
 
 #pragma mark - Initialization Methods
 - (id) initWithXMLElement:(CXMLElement *)metadataXMLElement;

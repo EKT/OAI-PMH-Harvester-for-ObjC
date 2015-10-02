@@ -130,7 +130,7 @@
     
     if (!resumptionTkn){
         if (setSpec) {
-            url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?verb=ListRecords&metadataPrefix=%@&setSpec=%@",baseURL, metadataPrefix, setSpec]];
+            url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?verb=ListRecords&metadataPrefix=%@&set=%@",baseURL, metadataPrefix, setSpec]];
         }
         else {
             url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?verb=ListRecords&metadataPrefix=%@",baseURL, metadataPrefix]];
@@ -166,10 +166,6 @@
                     self.resumptionToken = nil;
                 }
                 else {
-                    //if (self.resumptionToken){
-                    //    [self.resumptionToken release];
-                    //    self.resumptionToken = nil;
-                    //}
                     self.resumptionToken = [[ResumptionToken alloc] initWithXMLElement:[resumptionTokens objectAtIndex:0]];
                     NSLog(@"Token: %@", self.resumptionToken.token);
                 }
@@ -277,10 +273,6 @@
                     self.identifiersResumptionToken = nil;
                 }
                 else {
-                    //if (self.resumptionToken){
-                    //    [self.resumptionToken release];
-                    //    self.resumptionToken = nil;
-                    //}
                     self.identifiersResumptionToken = [[ResumptionToken alloc] initWithXMLElement:[resumptionTokens objectAtIndex:0]];
                     NSLog(@"Indentifiers Token: %@", self.identifiersResumptionToken.token);
                 }

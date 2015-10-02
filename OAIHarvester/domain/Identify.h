@@ -19,29 +19,17 @@ typedef enum
     
 } DELETIONS_STATUS;
 
-@interface Identify : NSObject {
-    NSString *repositoryName;
-    NSString *baseURL;
-    NSString *protocolVersion;
-    NSString *earliestDatestamp;
-    NSString *granularity;
-    
-    DELETIONS_STATUS deletionStatus;
-    
-    NSMutableArray *adminEmails;
-    NSMutableArray *compressions;
-    NSMutableArray *descriptions;
-}
+@interface Identify : NSObject
 
-@property (nonatomic, retain) NSString *repositoryName;
-@property (nonatomic, retain) NSString *baseURL;
-@property (nonatomic, retain) NSString *protocolVersion;
-@property (nonatomic, retain) NSString *earliestDatestamp;
-@property (nonatomic, retain) NSString *granularity;
+@property (nonatomic, strong) NSString *repositoryName;
+@property (nonatomic, strong) NSString *baseURL;
+@property (nonatomic, strong) NSString *protocolVersion;
+@property (nonatomic, strong) NSString *earliestDatestamp;
+@property (nonatomic, strong) NSString *granularity;
 @property (nonatomic, assign) DELETIONS_STATUS deletionStatus;
-@property (nonatomic, retain) NSMutableArray *adminEmails;
-@property (nonatomic, retain) NSMutableArray *compressions;
-@property (nonatomic, retain) NSMutableArray *descriptions;
+@property (nonatomic, strong) NSMutableArray *adminEmails;
+@property (nonatomic, strong) NSMutableArray *compressions;
+@property (nonatomic, strong) NSMutableArray *descriptions;
 
 #pragma mark - Initialization Methods
 - (id) initWithXMLElement:(CXMLElement *)xmlElement;

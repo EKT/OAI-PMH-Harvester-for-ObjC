@@ -10,13 +10,10 @@
 
 #import "OAIHarvester.h"
 
-@interface Identifier : NSObject {
-    NSString *identifier;
-    NSString *datestamp;
-}
+@interface Identifier : NSObject
 
-@property (nonatomic, retain) NSString *identifier;
-@property (nonatomic, retain) NSString *datestamp;
+@property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *datestamp;
 
 #pragma mark Initialization Methods
 - (id) initWithXMLElement:(CXMLElement *)xmlElement;

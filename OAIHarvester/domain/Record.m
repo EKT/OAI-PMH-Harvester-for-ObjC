@@ -25,6 +25,8 @@
             metadataElement = [metadataArray objectAtIndex:0];
         self.recordMetadata = [[RecordMetadata alloc] initWithXMLElement:metadataElement];
         self.recordHeader = [[RecordHeader alloc] initWithXMLElement:headerElement];
+        
+        self.asXML = recordXMLElement.XMLString;
     }
     return self;
 }

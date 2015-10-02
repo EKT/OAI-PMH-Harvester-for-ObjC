@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "OAIHarvester"
   s.version      = "0.0.1"
-  s.summary      = "AI-PMH Objective-C harvester is an Objective C library/wrapper over the OAI-PMH protocol."
+  s.summary      = "OAI-PMH Objective-C harvester is an Objective C library/wrapper over the OAI-PMH protocol."
 
   s.description  = <<-DESC
                    OAI-PMH Objective-C harvester is an Objective C library/wrapper over the OAI-PMH protocol. The Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) is a low-barrier mechanism for repository interoperability. Data Providers are repositories that expose structured metadata via OAI-PMH. Service Providers or metadata harvesters (like this one) then make OAI-PMH service requests to harvest that metadata. OAI-PMH is a set of six verbs or services that are invoked within HTTP.

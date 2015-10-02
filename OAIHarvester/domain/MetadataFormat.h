@@ -10,17 +10,11 @@
 
 #import "OAIHarvester.h"
 
-@interface MetadataFormat : NSObject {
-    
-    NSString *schema;
-    NSString *prefix;
-    NSString *namespce;
-    
-}
+@interface MetadataFormat : NSObject
 
-@property (nonatomic, retain) NSString *schema;
-@property (nonatomic, retain) NSString *prefix;
-@property (nonatomic, retain) NSString *namespce;
+@property (nonatomic, strong) NSString *schema;
+@property (nonatomic, strong) NSString *prefix;
+@property (nonatomic, strong) NSString *namespce;
 
 #pragma mark Initialization Methods
 - (id) initWithXMLElement:(CXMLElement *)xmlElement;

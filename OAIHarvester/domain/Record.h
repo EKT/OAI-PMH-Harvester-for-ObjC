@@ -10,14 +10,12 @@
 #import "RecordHeader.h"
 #import "RecordMetadata.h"
 
-@interface Record : NSObject {
-    
-    RecordHeader *recordHeader;
-    RecordMetadata *recordMetadata;
-}
+@interface Record : NSObject 
 
-@property (nonatomic, retain) RecordHeader *recordHeader;
-@property (nonatomic, retain) RecordMetadata *recordMetadata;
+@property (nonatomic, strong) NSString *asXML;
+
+@property (nonatomic, strong) RecordHeader *recordHeader;
+@property (nonatomic, strong) RecordMetadata *recordMetadata;
 
 #pragma mark - Initialization Methods
 - (id) initWithXMLElement:(CXMLElement *)recordXMLElement;

@@ -10,17 +10,10 @@
 
 #import "OAIHarvester.h"
 
-@interface ResumptionToken : NSObject {
-    
-    NSString *expireDate;
-    NSString *token;
-    int completeListSize;
-    int cursor;
-    
-}
+@interface ResumptionToken : NSObject
 
-@property (nonatomic, retain) NSString *expireDate;
-@property (nonatomic, retain) NSString *token;
+@property (nonatomic, strong) NSString *expireDate;
+@property (nonatomic, strong) NSString *token;
 @property (nonatomic, assign) int completeListSize;
 @property (nonatomic, assign) int cursor;
 

@@ -10,22 +10,12 @@
 
 #import "OAIHarvester.h"
 
-@interface Set : NSObject {
-    
-    NSString *name;
-    NSString *spec;
-    
-    NSString *fullSpec;
-    BOOL visible;
-    
-    NSMutableArray *children;
-    
-}
+@interface Set : NSObject
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *spec;
-@property (nonatomic, retain) NSMutableArray *children;
-@property (nonatomic, retain) NSString *fullSpec;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *spec;
+@property (nonatomic, strong) NSMutableArray *children;
+@property (nonatomic, strong) NSString *fullSpec;
 @property (nonatomic, assign) BOOL visible;
 
 #pragma mark Initialization Methods

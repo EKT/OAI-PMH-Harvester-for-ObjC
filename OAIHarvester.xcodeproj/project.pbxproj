@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5265B9821BB91E9C00C70585 /* MetadataElementAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5265B9811BB91E9C00C70585 /* MetadataElementAttribute.m */; settings = {ASSET_TAGS = (); }; };
 		52FCF7D41BB524A100FF431E /* OAIHarvester.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52FCF7D31BB524A100FF431E /* OAIHarvester.h */; };
 		52FCF7D61BB524A100FF431E /* OAIHarvester.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7D51BB524A100FF431E /* OAIHarvester.m */; };
 		52FCF7F61BB52AD100FF431E /* Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FCF7E51BB52AD100FF431E /* Identifier.m */; settings = {ASSET_TAGS = (); }; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		2EB534AC5FF1A4F5CA158AD4 /* Pods-OAIHarvester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAIHarvester.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAIHarvester/Pods-OAIHarvester.release.xcconfig"; sourceTree = "<group>"; };
+		5265B9801BB91E9C00C70585 /* MetadataElementAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetadataElementAttribute.h; path = domain/MetadataElementAttribute.h; sourceTree = "<group>"; };
+		5265B9811BB91E9C00C70585 /* MetadataElementAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetadataElementAttribute.m; path = domain/MetadataElementAttribute.m; sourceTree = "<group>"; };
 		52FCF7D01BB524A100FF431E /* libOAIHarvester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOAIHarvester.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FCF7D31BB524A100FF431E /* OAIHarvester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAIHarvester.h; sourceTree = "<group>"; };
 		52FCF7D51BB524A100FF431E /* OAIHarvester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAIHarvester.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				52FCF7E71BB52AD100FF431E /* Identify.m */,
 				52FCF7E81BB52AD100FF431E /* MetadataElement.h */,
 				52FCF7E91BB52AD100FF431E /* MetadataElement.m */,
+				5265B9801BB91E9C00C70585 /* MetadataElementAttribute.h */,
+				5265B9811BB91E9C00C70585 /* MetadataElementAttribute.m */,
 				52FCF7EA1BB52AD100FF431E /* MetadataFormat.h */,
 				52FCF7EB1BB52AD100FF431E /* MetadataFormat.m */,
 				52FCF7EC1BB52AD100FF431E /* Record.h */,
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5265B9821BB91E9C00C70585 /* MetadataElementAttribute.m in Sources */,
 				52FCF7F71BB52AD100FF431E /* Identify.m in Sources */,
 				52FCF7F91BB52AD100FF431E /* MetadataFormat.m in Sources */,
 				52FCF7FB1BB52AD100FF431E /* RecordHeader.m in Sources */,
