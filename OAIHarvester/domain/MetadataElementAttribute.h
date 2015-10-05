@@ -2,7 +2,7 @@
 //  MetadataElementAttribute.h
 //  Pods
 //
-//  Created by Kostas I. Stamatis on 9/28/15.
+//  Created by Fotis Talantzis on 9/28/15.
 //
 //
 

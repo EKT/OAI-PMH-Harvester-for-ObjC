@@ -63,9 +63,10 @@
 #pragma mark - Setters
 - (void) setBaseURL:(NSString *)theBaseURL {
     baseURL = theBaseURL;
-    [self identifyWithError:nil];
-    [self listMetadataFormatsWithError:nil];
-    [self listSetsWithError:nil];
+    NSError *error = nil;
+    [self identifyWithError:&error];
+    [self listMetadataFormatsWithError:&error];
+    [self listSetsWithError:&error];
 }
 
 #pragma mark - Error Checking

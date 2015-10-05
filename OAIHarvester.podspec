@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OAIHarvester"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "OAI-PMH Objective-C harvester is an Objective C library/wrapper over the OAI-PMH protocol."
 
   s.description  = <<-DESC
