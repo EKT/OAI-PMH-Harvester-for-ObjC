@@ -10,14 +10,14 @@ The Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) is a low
 Installation
 ------------
 1) Download or clone this project on your machine<br/>
-2) Copy & Paste the folder <b>OAIHarvester</b> in your project, drag the folder in your XCode project as usual<br/>
+2) Copy & Paste the folder <b>OAIHarvester</b> in your project, drag the folder in your Xcode project as usual<br/>
 3) In your projects precompiled header file (.pch extension) add the following lines<br/>
 
 	#import "TouchXML.h"
     #define BASE_NAMESPACE @"http://www.openarchives.org/OAI/2.0/"
 
 4) Enable <b>libxml2</b> library<br/>
-* In XCode, within <b>Build Settings</b>, search for <b>Header search paths</b> setting and add `/usr/include/libxml2` value to it
+* In Xcode, within <b>Build Settings</b>, search for <b>Header search paths</b> setting and add `/usr/include/libxml2` value to it
 * In the same place, search for <b>Other linker flags</b> setting and add `-lxml2` value
 
 5) You are ready to use the library
